@@ -10,14 +10,14 @@ IAM_instance_profile="Arn=arn:aws:iam::925034260775:role/Allow-admin-fromec2"
 
 aws ec2 run-instances \
     --image-id ${IMAGE} \
-    --instance_type ${TYPE} \
+    --instance-type ${TYPE} \
     --key-name ${KEY} \
     --monitoring "Enabled=false" \
     --placement file://placement.json \
-    --security-groups-ids "${SECURITY_GROUPS}" \
+    --security-group-ids "${SECURITY_GROUPS}" \
     --subnet-id ${subnet} \
     --iam-instance-profile "${IAM_instance_profile}"
     --region ${region} \
     --tag-specifications file://tags.json \
-    --instance-initiated-shutdown-behavior terminate \
+    --instance-initiated-shutdown-behavior stop \
     --block-device-mappings file://block-device-mappings.json
