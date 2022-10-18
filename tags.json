@@ -1,0 +1,19 @@
+[
+  {
+     "ResourceType": "instance",
+     "Tags": [
+       {
+           "Value": "Deeloper",
+           "Key": "Team"
+       },
+       {
+         "Value": "AmazonLinux",
+         "Key": "Server"
+       },
+       {
+         "Value": "Venkateshdevarapati@gmail.com",
+         "Key": "TeamContact"
+       }
+     ]
+  }
+]
