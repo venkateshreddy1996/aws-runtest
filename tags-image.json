@@ -1,6 +1,6 @@
 [
   {
-     "ResourceType": "instance",
+     "ResourceType": "image",
      "Tags": [
        {
            "Value": "Developer",
