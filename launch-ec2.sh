@@ -16,8 +16,8 @@ aws ec2 run-instances \
     --placement file://placement.json \
     --security-group-ids "${SECURITY_GROUPS}" \
     --subnet-id ${subnet} \
-    --iam-instance-profile "${IAM_instance_profile}"
-    --region ${region} \
+    --iam-instance-profile "${IAM_instance_profile}" \
     --tag-specifications file://tags.json \
     --instance-initiated-shutdown-behavior stop \
-    --block-device-mappings file://block-device-mappings.json
+    --block-device-mappings file://block-device-mappings.json \
+    --region ${region}
