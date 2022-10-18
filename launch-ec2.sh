@@ -6,7 +6,7 @@ TYPE=t2.micro
 KEY=devkey-rjt
 SECURITY_GROUPS=sg-091613d2180615619
 subnet=subnet-05a196b9647702a6c
-IAM_instance_profile="Arn=arn:aws:iam::925034260775:role/Allow-admin-fromec2"
+IAM_instance_profile="Arn=arn:aws:iam::925034260775:instance-profile/Allow-admin-fromec2"
 
 aws ec2 run-instances \
     --image-id ${IMAGE} \
