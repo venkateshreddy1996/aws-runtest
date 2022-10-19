@@ -14,5 +14,5 @@ aws autoscaling create-launch-configuration \
     --instance-type ${Instance_type} \
     --security-groups "${security_groups}" \
     --iam-instance-profile "${IAM_instance_profile}" \
-    --key-name ${Key}
+    --key-name ${Key} \
     --region ${region}
