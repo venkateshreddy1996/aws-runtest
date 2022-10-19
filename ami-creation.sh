@@ -1,9 +1,9 @@
 #!/bin/bash
 
 aws ec2 create-image \
-    --instance-id i-0059a565187319d70 \
-    --name "JenkinsBackupAMi" \
-    --description "An AMI for my server" \
+    --instance-id i-07832c93498a3bcb6 \
+    --name "WebserverAMI" \
+    --description "Taking AMI backup for webserver" \
     --output text \
     --region ap-south-1 \
     --no-reboot
