@@ -7,4 +7,3 @@ aws ec2 create-image \
     --output text \
     --region ap-south-1 \
     --no-reboot
-    --tag-specifications file://tags-image.json
