@@ -11,4 +11,5 @@ aws ec2 copy-image \
     --source-image-id ${source_imageid} \
     --name ${NAME} \
     --region ${destination_region} \
-    --description "This is my copied image"
+    --description "This is my copied image" \
+    --output json
