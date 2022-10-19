@@ -6,7 +6,7 @@ Instance_type=t2.micro
 security_groups=sg-091613d2180615619
 Key=devkey-rjt
 region=ap-south-1
-IAM_instance_profile="Arn=arn:aws:iam::925034260775:instance-profile/Allow-admin-fromec2"
+IAM_instance_profile=Allow-admin-fromec2
 
 aws autoscaling create-launch-configuration \
     --launch-configuration-name ${NAME} \
